@@ -34,7 +34,6 @@ if len(logging.getLogger(str(os.getpid())).handlers) == 0:
 	fh = logging.StreamHandler(sys.stdout)
 	fh.setLevel(logging.DEBUG)
 	logger.addHandler(fh)
-logger.debug('Loaded '+ __file__)
 
 
 class oauth2api(object):

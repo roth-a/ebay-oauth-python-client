@@ -27,8 +27,6 @@ if len(logging.getLogger(str(os.getpid())).handlers) == 0:
 	fh = logging.StreamHandler(sys.stdout)
 	fh.setLevel(logging.DEBUG)
 	logger.addHandler(fh)
-logger.debug('Loaded '+ __file__)
-
 
 user_config_ids = ["sandbox-user", "production-user"]
 
